@@ -19,7 +19,7 @@ public class ReadWriteData implements ReadWrite {
 
     public void writeData(List<Product> products) {
         try {
-            FileOutputStream fos = new FileOutputStream("data/products.csv");
+            FileOutputStream fos = new FileOutputStream("datacake/product.csv");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(products);
             fos.close();
